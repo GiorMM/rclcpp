@@ -97,11 +97,9 @@ GenericSubscription::get_serialization_support()
 
 void
 GenericSubscription::handle_dynamic_message(
-  const std::shared_ptr<rosidl_dynamic_typesupport_serialization_support_t> & serialization_support,
   const std::shared_ptr<rosidl_dynamic_typesupport_dynamic_data_t> & dyn_data,
   const rclcpp::MessageInfo & message_info)
 {
-  (void) serialization_support;
   (void) dyn_data;
   (void) message_info;
   throw rclcpp::exceptions::UnimplementedError(

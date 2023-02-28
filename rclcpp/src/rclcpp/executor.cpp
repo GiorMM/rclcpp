@@ -637,7 +637,7 @@ Executor::execute_subscription(rclcpp::SubscriptionBase::SharedPtr subscription)
           if (ret != RMW_RET_OK) {
             throw_from_rcl_error(ret, "Couldn't convert serialized message to dynamic data!");
           }
-          subscription->handle_dynamic_message(serialization_support, dyn_data, message_info);
+          subscription->handle_dynamic_message(dyn_data, message_info);
         }
       );
       subscription->return_serialized_message(serialized_msg);

@@ -563,7 +563,6 @@ public:
   virtual
   void
   handle_dynamic_message(
-    const std::shared_ptr<rosidl_dynamic_typesupport_serialization_support_t> & serialization_support,
     const std::shared_ptr<rosidl_dynamic_typesupport_dynamic_data_t> & dyn_data,
     const rclcpp::MessageInfo & message_info
   ) = 0;
